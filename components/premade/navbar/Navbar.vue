@@ -27,9 +27,9 @@
 
   const apps: Item[] = [
     {
-      name: 'tewFA',
-      link: 'https://tfa.asboy2035.com',
-      icon: 'https://tfa.asboy2035.com/assets/icon-1024.png'
+      name: 'Authie',
+      link: 'https://authie.asboy2035.com',
+      icon: 'https://authie.asboy2035.com/apple-touch-icon.png',
     },
     {
       name: "Astro+",

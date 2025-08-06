@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/asboy2035-nuxt.iml" filepath="$PROJECT_DIR$/asboy2035-nuxt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NuxtSite.iml" filepath="$PROJECT_DIR$/NuxtSite.iml" />
     </modules>
   </component>
 </project>

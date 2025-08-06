@@ -29,8 +29,8 @@
       />
 
       <icon-item
-        name="JS"
-        icon="fluent:javascript-16-regular"
+        name="TS"
+        icon="proicons:typescript"
       />
 
       <icon-item

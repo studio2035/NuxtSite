@@ -25,7 +25,7 @@
     border-radius: var(--interior-radius)
     padding: 0.75rem
     transition: 0.2s ease
-    backdrop-filter: saturate(150%) blur(1rem)
+    backdrop-filter: saturate(175%) blur(1rem)
 
     &::after // Specular Highlight
       content: ""

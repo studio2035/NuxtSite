@@ -4,55 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add aria label to mobile nav button">
-      <change afterPath="$PROJECT_DIR$/components/premade/navbar/LauncherCard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/launchers/launcherApps.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/launchers/launcherCreators.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/LauncherItem.ts" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update code styling, improve langs card, coloring improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuxtSite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NuxtSite.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/apps/AppLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppLink.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/apps/AppsCategoryList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/charCards/CardPreview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/charCards/CardPreview.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/charCards/CustomizerPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/charCards/CustomizerPanel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/creator/CreatorsCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/creator/CreatorsCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/AboutHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/AboutHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/AboutSidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/AboutSidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/NavButtons.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/NavButtons.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/cards/AboutCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/AboutCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LangsCard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/cards/LocationCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/IconItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/IconItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/NavigationTitle.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/links/MoreLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/MoreLinks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/links/SocialLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/SocialLinks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/links/SupportLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/links/SupportLinks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/Description.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/Description.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/NavigationButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/NavigationButton.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/NavigationLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/NavigationLinks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePick.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePick.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/BannerNotification.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/BannerNotification.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/CardTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/CardTitle.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/Hero.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Hero.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/utils/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/utils/Modal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apps/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/creator/char-card/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/char-card/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/creator/csv-to-json/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/csv-to-json/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/creator/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/links.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/links.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/playlists/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tests/audio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tests/audio.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/InteriorItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/InteriorItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/colors.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/colors.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/utilities.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/utilities.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +105,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.preview">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -504,7 +461,7 @@
       <workItem from="1754503251271" duration="206000" />
       <workItem from="1754503544585" duration="1217000" />
       <workItem from="1754564720909" duration="4582000" />
-      <workItem from="1754570289336" duration="7333000" />
+      <workItem from="1754570289336" duration="9557000" />
     </task>
     <task id="LOCAL-00001" summary="updated cards, updated buttons, updated loader, code improvements">
       <option name="closed" value="true" />
@@ -786,7 +743,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754571131668</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="update code styling, improve langs card, coloring improvements">
+      <option name="closed" value="true" />
+      <created>1754579478698</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1754579478698</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -804,7 +769,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="improve toolbox w/ new header" />
     <MESSAGE value="improve toolbox &amp; footer" />
     <MESSAGE value="improve toolbox &amp; apps list view" />
     <MESSAGE value="rebrand PWA" />
@@ -829,7 +793,8 @@
     <MESSAGE value="update js to ts and update iml file" />
     <MESSAGE value="optimize assets, improve accessibility" />
     <MESSAGE value="add aria label to mobile nav button" />
-    <option name="LAST_COMMIT_MESSAGE" value="add aria label to mobile nav button" />
+    <MESSAGE value="update code styling, improve langs card, coloring improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="update code styling, improve langs card, coloring improvements" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -22,9 +22,8 @@
 
     border-radius: var(--card-radius)
     background: colors.$foregroundColor
-    backdrop-filter: blur(2.5rem)
+    backdrop-filter: blur(2.5rem) saturate(125%)
     z-index: 2
-    //overflow: hidden
 
     &::after // Specular Highlighting
       content: ""
@@ -37,7 +36,7 @@
       border: 0.1rem solid colors.$shadowColor
       border-radius: var(--card-radius)
       box-shadow: inset 0 0 0.75rem colors.$shadowColor
-      opacity: 0.5
+      opacity: 0.6
       pointer-events: none
       transition: opacity 0.2s ease
       mask: conic-gradient(from -45deg, black, rgba(0, 0, 0, 0.1), black, rgba(0, 0, 0, 0.1), black)

@@ -205,7 +205,7 @@
         <navigation-links class="desktopLinks" />
       </interior-item>
 
-      <button id="mobileButton" @click="toggleNavigation">
+      <button id="mobileButton" @click="toggleNavigation" aria-label="Show navigation">
         <Icon
           icon="solar:compass-bold"
           class="growIn" v-if="!showMobileNav"

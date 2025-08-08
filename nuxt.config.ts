@@ -6,9 +6,9 @@ export default defineNuxtConfig({
       },
       link: [
         { rel: 'preconnect', href: 'https://api.iconify.design', crossorigin: '' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        { rel: 'preconnect', href: 'https://fonts.asboy2035.com', crossorigin: '' },
         { rel: 'dns-prefetch', href: 'https://api.iconify.design' },
-        { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com' },
+        { rel: 'dns-prefetch', href: 'https://fonts.asboy2035.com' },
         { rel: 'manifest', href: '/manifest.webmanifest' }
       ]
     },

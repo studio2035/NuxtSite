@@ -24,6 +24,7 @@
     gap: 0.5rem
     margin-bottom: 0.5rem
     padding: 0.25rem 0.3rem
+
     h2
-      margin: 0
+      margin: 0.25rem 0 0
 </style>

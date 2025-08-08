@@ -33,9 +33,10 @@
     transition: 0.2s ease-in-out
     padding: 0
 
-  .navigationButton > ::v-deep(svg)
-    height: 1.25rem
-    width: 1.25rem
+  .navigationButton
+    ::v-deep(svg)
+      height: 1.25rem
+      width: 1.25rem
 
   /* Tooltip Styling */
   .toolTip
@@ -47,6 +48,9 @@
     white-space: nowrap
     z-index: 25
     animation: slideIn 0.2s ease-in-out forwards
+
+    h4
+      margin: 0
 
   /* Show tooltip on hover */
   .navWrapper:hover .toolTip

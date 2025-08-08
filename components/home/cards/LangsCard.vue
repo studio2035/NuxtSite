@@ -79,4 +79,8 @@
 <style scoped lang="sass">
   .langsGrid
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)) !important
+
+  @media (max-width: 35rem)
+    .langsGrid
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)) !important
 </style>

@@ -1,18 +1,19 @@
 import { defineNuxtPlugin, useRouter } from '#app'
+import type {RouteLocation, Router} from '#vue-router'
 
-export default defineNuxtPlugin(() => {
-  const router = useRouter()
+export default defineNuxtPlugin((): void => {
+  const router: Router = useRouter()
 
-  router.afterEach((to) => {
-    const baseUrl = 'https://asboy2035.com'
-    const canonicalLink = document.querySelector("link[rel='canonical']")
+  router.afterEach((to: RouteLocation): void => {
+    const baseUrl: string = 'https://asboy2035.com'
+    const canonicalLink: HTMLLinkElement | null = document.querySelector("link[rel='canonical']")
 
-    const fullUrl = baseUrl + to.fullPath
+    const fullUrl: string = baseUrl + to.fullPath
 
     if (canonicalLink) {
       canonicalLink.setAttribute('href', fullUrl)
     } else {
-      const link = document.createElement('link')
+      const link: HTMLLinkElement = document.createElement('link')
       link.setAttribute('rel', 'canonical')
       link.setAttribute('href', fullUrl)
       document.head.appendChild(link)

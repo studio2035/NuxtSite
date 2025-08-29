@@ -13,7 +13,7 @@ export default defineNuxtConfig({
       ]
     },
   },
-  compatibilityDate: '2025-05-15',
+  compatibilityDate: '2025-08-09',
   modules: [ '@vite-pwa/nuxt' ],
   pwa: {
     registerType: 'autoUpdate',
@@ -36,6 +36,11 @@ export default defineNuxtConfig({
   css: [
     "@/styles/global.sass"
   ],
+  vite: {
+    build: {
+      sourcemap: 'inline'
+    }
+  },
   nitro: {
     compressPublicAssets: true,
     publicAssets: [

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-  import VStack from "@/components/layout/VStack.vue"
-  import CardTitle from "@/components/utils/CardTitle.vue"
+  import VStack from '@/components/layout/VStack.vue'
+  import CardTitle from '@/components/utils/CardTitle.vue'
 </script>
 
 <template>

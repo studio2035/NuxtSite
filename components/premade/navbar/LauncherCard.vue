@@ -1,10 +1,10 @@
 <script setup lang="ts">
-  import InteriorItem from "@/components/layout/InteriorItem.vue"
-  import CardTitle from "@/components/utils/CardTitle.vue"
-  import DynamicImage from "@/components/utils/DynamicImage.vue"
-  import HStack from "@/components/layout/HStack.vue"
-  import Card from "@/components/layout/Card.vue"
-  import type LauncherItem from "@/types/LauncherItem"
+  import type LauncherItem from '@/types/LauncherItem'
+  import InteriorItem from '@/components/layout/InteriorItem.vue'
+  import CardTitle from '@/components/utils/CardTitle.vue'
+  import DynamicImage from '@/components/utils/DynamicImage.vue'
+  import HStack from '@/components/layout/HStack.vue'
+  import Card from '@/components/layout/Card.vue'
 
   defineProps<{
     title: string

@@ -43,4 +43,4 @@ export const apps: AppPageMeta[] = [
     ],
     brewCmd: "brew install asboy2035/apps/stand"
   }
-];
+]

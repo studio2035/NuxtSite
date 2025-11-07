@@ -1,8 +1,8 @@
 <script setup lang="ts">
-  import Card from "@/components/layout/Card.vue"
-  import HStack from "@/components/layout/HStack.vue"
-  import {Icon} from "@iconify/vue"
-  import CardTitle from "@/components/utils/CardTitle.vue";
+  import { Icon } from '@iconify/vue'
+  import Card from '@/components/layout/Card.vue'
+  import HStack from '@/components/layout/HStack.vue'
+  import CardTitle from '@/components/utils/CardTitle.vue'
 </script>
 
 <template>

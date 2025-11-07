@@ -1,15 +1,15 @@
 <script setup lang="ts">
-  import { ref } from "vue"
+  import { ref } from 'vue'
+  import { Icon } from '@iconify/vue'
+  import type { Ref } from 'vue'
+  import Card from '@/components/layout/Card.vue'
+  import VStack from '@/components/layout/VStack.vue'
+  import HStack from '@/components/layout/HStack.vue'
+  import FullscreenCover from '@/components/premade/FullscreenCover.vue'
+  import SitePicker from '@/components/premade/navbar/SitePicker.vue'
+  import DynamicImage from '@/components/utils/DynamicImage.vue'
 
-  import Card from "@/components/layout/Card.vue"
-  import VStack from "@/components/layout/VStack.vue"
-  import HStack from "@/components/layout/HStack.vue"
-  import FullscreenCover from "@/components/premade/FullscreenCover.vue"
-  import SitePicker from "@/components/premade/navbar/SitePicker.vue"
-  import DynamicImage from "@/components/utils/DynamicImage.vue"
-  import { Icon } from "@iconify/vue"
-
-  const showSiteSwitcher = ref(false)
+  const showSiteSwitcher: Ref<boolean> = ref(false)
 
   function toggleSiteSwitcher() {
     showSiteSwitcher.value = !showSiteSwitcher.value

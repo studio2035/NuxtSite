@@ -1,8 +1,8 @@
 <script setup lang="ts">
-  import { ref } from "vue"
-  import Card from "@/components/layout/Card.vue"
+  import { ref } from 'vue'
+  import Card from '@/components/layout/Card.vue'
 
-  const hidden = ref(false)
+  const hidden: Ref<boolean> = ref(false)
 
   function handleAnimationEnd() {
     hidden.value = true

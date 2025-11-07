@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  import Card from "@/components/layout/Card.vue"
-  import CardTitle from "@/components/utils/CardTitle.vue"
-  import VStack from "@/components/layout/VStack.vue"
-  import NavButtons from "@/components/home/NavButtons.vue"
-  import Divider from "@/components/utils/Divider.vue"
+  import Card from '@/components/layout/Card.vue'
+  import CardTitle from '@/components/utils/CardTitle.vue'
+  import VStack from '@/components/layout/VStack.vue'
+  import NavButtons from '@/components/home/NavButtons.vue'
+  import Divider from '@/components/utils/Divider.vue'
 
   defineProps<{
     hideReadMore?: boolean

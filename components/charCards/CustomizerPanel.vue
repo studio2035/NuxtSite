@@ -69,17 +69,18 @@
   </Card>
 </template>
 
-<script setup>
+<script setup lang="ts">
   import { ref, watch } from 'vue'
-  import Card from "@/components/layout/Card.vue"
-  import InteriorItem from "@/components/layout/InteriorItem.vue"
-  import VStack from "@/components/layout/VStack.vue"
-  import HStack from "@/components/layout/HStack.vue"
+  import type { Ref } from 'vue'
+  import Card from '@/components/layout/Card.vue'
+  import InteriorItem from '@/components/layout/InteriorItem.vue'
+  import VStack from '@/components/layout/VStack.vue'
+  import HStack from '@/components/layout/HStack.vue'
 
   const props = defineProps(['modelValue'])
   const emit = defineEmits(['update:modelValue'])
-  const localData = ref({ ...props.modelValue })
-  const interest = ref('')
+  const localData: Ref = ref({ ...props.modelValue })
+  const interest: Ref<string> = ref('')
 
   watch(
     localData,
@@ -87,8 +88,9 @@
     { deep: true }
   )
 
-  const handleFile = (e, field) => {
-    const file = e.target.files[0]
+  const handleFile = (e: Event, field: keyof typeof localData.value) => {
+    const target = e.target as HTMLInputElement
+    const file = target.files?.[0]
     if (file) {
       const reader = new FileReader()
       reader.onload = () => {
@@ -105,8 +107,7 @@
     }
   }
 
-  const removeInterest = (index) => {
+  const removeInterest = (index: any) => {
     localData.value.interests.splice(index, 1)
   }
 </script>
-

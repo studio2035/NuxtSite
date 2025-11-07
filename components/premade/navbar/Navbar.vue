@@ -1,18 +1,19 @@
 <script setup lang="ts">
   import { ref } from 'vue'
+  import { Icon } from '@iconify/vue'
+  import { ProgressiveBlur } from 'vue-progressive-blur'
+  import { launcherApps } from '@/data/launchers/launcherApps'
+  import { launcherCreators } from '@/data/launchers/launcherCreators'
+
   import HStack from '@/components/layout/HStack.vue'
   import VStack from '@/components/layout/VStack.vue'
   import InteriorItem from '@/components/layout/InteriorItem.vue'
-  import FullscreenCover from "@/components/premade/FullscreenCover.vue"
-  import DynamicImage from "@/components/utils/DynamicImage.vue"
-  import NavigationLinks from "@/components/premade/navbar/NavigationLinks.vue"
-  import NavigationButton from "@/components/premade/navbar/NavigationButton.vue"
-  import SitePicker from "@/components/premade/navbar/SitePicker.vue"
-  import { Icon } from '@iconify/vue'
-  import { ProgressiveBlur } from "vue-progressive-blur"
-  import { launcherApps } from "@/data/launchers/launcherApps"
-  import { launcherCreators } from "@/data/launchers/launcherCreators"
-  import LauncherCard from "@/components/premade/navbar/LauncherCard.vue"
+  import FullscreenCover from '@/components/premade/FullscreenCover.vue'
+  import DynamicImage from '@/components/utils/DynamicImage.vue'
+  import NavigationLinks from '@/components/premade/navbar/NavigationLinks.vue'
+  import NavigationButton from '@/components/premade/navbar/NavigationButton.vue'
+  import SitePicker from '@/components/premade/navbar/SitePicker.vue'
+  import LauncherCard from '@/components/premade/navbar/LauncherCard.vue'
 
   const showSwitcher = ref(false)
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import CardTitle from "@/components/utils/CardTitle.vue"
-  import Card from "@/components/layout/Card.vue"
-  import HStack from "@/components/layout/HStack.vue"
+  import CardTitle from '@/components/utils/CardTitle.vue'
+  import Card from '@/components/layout/Card.vue'
+  import HStack from '@/components/layout/HStack.vue'
 </script>
 
 <template>

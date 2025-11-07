@@ -1,15 +1,15 @@
 <script setup lang="ts">
   import { ref, onMounted } from 'vue'
-  import Card from "@/components/layout/Card.vue"
-  import Spacer from "@/components/utils/Spacer.vue"
-  import VStack from "@/components/layout/VStack.vue"
-  import Grid from "@/components/layout/Grid.vue"
-  import Hero from "@/components/utils/Hero.vue"
-  import HStack from "@/components/layout/HStack.vue"
-  import BottomFooter from "@/components/premade/BottomFooter.vue"
-  import Navbar from "@/components/premade/navbar/Navbar.vue"
-  import {Icon} from "@iconify/vue"
-  import CardTitle from "@/components/utils/CardTitle.vue"
+  import { Icon } from '@iconify/vue'
+  import Card from '@/components/layout/Card.vue'
+  import Spacer from '@/components/utils/Spacer.vue'
+  import VStack from '@/components/layout/VStack.vue'
+  import Grid from '@/components/layout/Grid.vue'
+  import Hero from '@/components/utils/Hero.vue'
+  import HStack from '@/components/layout/HStack.vue'
+  import BottomFooter from '@/components/premade/BottomFooter.vue'
+  import Navbar from '@/components/premade/navbar/Navbar.vue'
+  import CardTitle from '@/components/utils/CardTitle.vue'
 
   useHead({
     title: "ash's Goodies",
@@ -105,7 +105,7 @@
     </grid>
 
     <BottomFooter />
-    <navbar />
+    <Navbar />
   </div>
 </template>
 

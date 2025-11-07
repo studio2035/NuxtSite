@@ -1,17 +1,18 @@
 <script setup lang="ts">
-  import {Icon} from "@iconify/vue"
-  import VStack from "@/components/layout/VStack.vue"
-  import Card from "@/components/layout/Card.vue"
-  import CardTitle from "@/components/utils/CardTitle.vue"
-  import {onMounted, ref} from "vue"
-  import type {AppCategory} from "@/types/appsViews"
-  import Divider from "@/components/utils/Divider.vue"
-  import NavigationTitle from "@/components/layout/NavigationTitle.vue"
-  import BottomFooter from "@/components/premade/BottomFooter.vue"
-  import HStack from "@/components/layout/HStack.vue"
+  import { Icon } from '@iconify/vue'
+  import { onMounted, ref } from 'vue'
+  import { launcherCreators } from '@/data/launchers/launcherCreators'
+  import type { AppCategory } from '@/types/appsViews'
+
+  import VStack from '@/components/layout/VStack.vue'
+  import Card from '@/components/layout/Card.vue'
+  import CardTitle from '@/components/utils/CardTitle.vue'
+  import Divider from '@/components/utils/Divider.vue'
+  import NavigationTitle from '@/components/layout/NavigationTitle.vue'
+  import BottomFooter from '@/components/premade/BottomFooter.vue'
+  import HStack from '@/components/layout/HStack.vue'
   import Modal from '@/components/utils/Modal.vue'
-  import LauncherCard from "~/components/premade/navbar/LauncherCard.vue";
-  import {launcherCreators} from "~/data/launchers/launcherCreators";
+  import LauncherCard from '@/components/premade/navbar/LauncherCard.vue'
 
   const appsData = ref<AppCategory[]>([])
   const showingAboutModal = ref(false)
@@ -66,7 +67,7 @@
         />
 
         <HStack>
-          <a href="https://guides.asboy2035.com/">
+          <a href="https://g.a35.dev/">
             <button>
               <Icon icon="solar:book-line-duotone" />
               Guides
@@ -112,7 +113,7 @@
       <p>Here, you can find apps, tools, and more, right from one app that you can add directly to your home screen.</p>
 
       <a
-        href="https://guides.asboy2035.com/misc/web/pwaInstall"
+        href="https://g.a35.dev/misc/web/pwaInstall"
         target="_blank"
       >
         <button>

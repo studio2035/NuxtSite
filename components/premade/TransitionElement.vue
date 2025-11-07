@@ -1,5 +1,5 @@
 <script setup>
-  import {Icon} from "@iconify/vue"
+  import { Icon } from '@iconify/vue'
   import { ref } from 'vue'
 
   const isActive = ref(false)

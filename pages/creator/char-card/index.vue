@@ -13,24 +13,25 @@
       </VStack>
     </grid>
 
-    <navbar>
+    <Navbar>
       <button @click="exportCard()">
         <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M7 11l5 5l5-5m-5-7v12"/></svg>
         Download
       </button>
-    </navbar>
+    </Navbar>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
   import { ref } from 'vue'
+  import html2canvas from 'html2canvas'
+  import type { Ref } from 'vue'
   import CustomizerPanel from '@/components/charCards/CustomizerPanel.vue'
   import CardPreview from '@/components/charCards/CardPreview.vue'
-  import html2canvas from 'html2canvas'
-  import VStack from "@/components/layout/VStack.vue"
-  import Navbar from "@/components/premade/navbar/Navbar.vue"
-  import Grid from "@/components/layout/Grid.vue"
-  import Hero from "@/components/utils/Hero.vue"
+  import VStack from '@/components/layout/VStack.vue'
+  import Navbar from '@/components/premade/navbar/Navbar.vue'
+  import Grid from '@/components/layout/Grid.vue'
+  import Hero from '@/components/utils/Hero.vue'
 
   useHead({
     title: "Create Character Card",
@@ -53,9 +54,9 @@
     accent: '#A084E8',
   })
 
-  const cardRef = ref(null)
+  const cardRef: Ref = ref(null)
 
-  const exportCard = async (includeBackground) => {
+  const exportCard = async (includeBackground: boolean = false) => {
     const el = cardRef.value.$el
     const canvas = await html2canvas(el, {
       backgroundColor: includeBackground ? null : 'transparent'

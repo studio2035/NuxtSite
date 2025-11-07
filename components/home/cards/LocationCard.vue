@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  import Card from "@/components/layout/Card.vue"
-  import CardTitle from "@/components/utils/CardTitle.vue"
   import { onMounted, ref, watch } from 'vue'
   import createGlobe from 'cobe'
-  import InteriorItem from "@/components/layout/InteriorItem.vue";
+  import Card from '@/components/layout/Card.vue'
+  import CardTitle from '@/components/utils/CardTitle.vue'
+  import InteriorItem from '@/components/layout/InteriorItem.vue'
 
   const canvasRef = ref<HTMLCanvasElement | null>(null)
   const isDarkMode = ref(0)

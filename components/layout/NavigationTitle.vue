@@ -1,39 +1,39 @@
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from "vue"
-import HStack from "@/components/layout/HStack.vue"
-import {ProgressiveBlur} from 'vue-progressive-blur'
-import InteriorItem from '@/components/layout/InteriorItem.vue'
+  import { ref, onMounted, onBeforeUnmount } from 'vue'
+  import { ProgressiveBlur } from 'vue-progressive-blur'
+  import HStack from '@/components/layout/HStack.vue'
+  import InteriorItem from '@/components/layout/InteriorItem.vue'
 
-defineProps<{
-  title: string
-  subtitle?: string
-}>()
+  defineProps<{
+    title: string
+    subtitle?: string
+  }>()
 
-const sentinel = ref<HTMLElement | null>(null)
-const isStuck = ref(false)
+  const sentinel = ref<HTMLElement | null>(null)
+  const isStuck = ref(false)
 
-onMounted(() => {
-  const observer = new IntersectionObserver(
-      ([entry]) => {
-        isStuck.value = !entry.isIntersecting
-      },
-      {
-        threshold: 0,
-        rootMargin: '0px 0px -1px 0px' // Prevents flickering at the exact intersection point
-      }
-  )
+  onMounted(() => {
+    const observer = new IntersectionObserver(
+        ([entry]) => {
+          isStuck.value = !entry?.isIntersecting
+        },
+        {
+          threshold: 0,
+          rootMargin: '0px 0px -1px 0px' // Prevents flickering at the exact intersection point
+        }
+    )
 
-  if (sentinel.value) {
-    observer.observe(sentinel.value)
-  }
-
-  onBeforeUnmount(() => {
     if (sentinel.value) {
-      observer.unobserve(sentinel.value)
+      observer.observe(sentinel.value)
     }
-    observer.disconnect()
+
+    onBeforeUnmount(() => {
+      if (sentinel.value) {
+        observer.unobserve(sentinel.value)
+      }
+      observer.disconnect()
+    })
   })
-})
 </script>
 
 <template>

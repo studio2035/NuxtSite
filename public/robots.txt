@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://asboy2035.com/sitemap.xml
+Sitemap: https://a35.dev/sitemap.xml

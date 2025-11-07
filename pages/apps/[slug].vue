@@ -1,24 +1,24 @@
 <script setup lang="ts">
+  import { ref, onMounted, computed } from 'vue'
   import { useRoute } from 'vue-router'
   import { apps } from '@/data/apps'
-  import type { AppPageMeta } from '@/data/apps'
-  import { ref, onMounted, computed } from 'vue'
-  import Hero from "@/components/utils/Hero.vue"
-  import BottomFooter from "@/components/premade/BottomFooter.vue"
   import { marked } from 'marked'
-  import Card from "@/components/layout/Card.vue"
-  import UpdatedBadge from "@/components/apps/UpdatedBadge.vue"
+  import type { AppPageMeta } from '@/data/apps'
 
+  import Hero from '@/components/utils/Hero.vue'
+  import BottomFooter from '@/components/premade/BottomFooter.vue'
+  import Card from '@/components/layout/Card.vue'
+  import UpdatedBadge from '@/components/apps/UpdatedBadge.vue'
   import GithubIcon from '@/components/apps/GithubIcon.vue'
   import AppStoreIcon from '@/components/apps/AppStoreIcon.vue'
   import LinkIcon from '@/components/apps/LinkIcon.vue'
-  import HStack from "@/components/layout/HStack.vue"
-  import Navbar from "@/components/premade/navbar/Navbar.vue"
+  import HStack from '@/components/layout/HStack.vue'
+  import Navbar from '@/components/premade/navbar/Navbar.vue'
 
   const route = useRoute()
-  const slug = route.params.slug as string
-  const app = apps.find(app => app.slug === slug) as AppPageMeta | undefined
-  const longDescriptionRaw = ref('')
+  const slug: string = route.params.slug as string
+  const app: AppPageMeta | undefined = apps.find(app => app.slug === slug) as AppPageMeta | undefined
+  const longDescriptionRaw: Ref<string> = ref('')
 
   // Add computed property to render Markdown
   const longDescription = computed(() => {
@@ -91,14 +91,14 @@
 
     <BottomFooter />
 
-    <navbar>
+    <Navbar>
       <NuxtLink to="/apps/">
         <button>
           <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l6 6m-6-6l6-6"/></svg>
           All Apps
         </button>
       </NuxtLink>
-    </navbar>
+    </Navbar>
   </div>
 </template>
 

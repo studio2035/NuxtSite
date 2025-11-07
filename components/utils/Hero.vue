@@ -1,10 +1,10 @@
 <script>
-  import DynamicImage from "@/components/utils/DynamicImage.vue"
-  import InteriorItem from "@/components/layout/InteriorItem.vue";
-  import Card from "@/components/layout/Card.vue";
+  import DynamicImage from '@/components/utils/DynamicImage.vue'
+  import InteriorItem from '@/components/layout/InteriorItem.vue'
+  import Card from '@/components/layout/Card.vue'
 
   export default {
-    components: {Card, InteriorItem, DynamicImage},
+    components: { Card, InteriorItem, DynamicImage },
     props: {
       image: String,
       imageAlt: String ?? "Image"

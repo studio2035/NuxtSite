@@ -1,16 +1,16 @@
 <script setup lang="ts">
   import { ref, onMounted } from 'vue'
-  import Card from "@/components/layout/Card.vue"
-  import VStack from "@/components/layout/VStack.vue"
-  import HStack from "@/components/layout/HStack.vue"
-  import SitePicker from "@/components/premade/navbar/SitePicker.vue"
-  import DynamicImage from "@/components/utils/DynamicImage.vue"
-  import {Icon} from "@iconify/vue"
+  import { Icon } from '@iconify/vue'
+  import Card from '@/components/layout/Card.vue'
+  import VStack from '@/components/layout/VStack.vue'
+  import HStack from '@/components/layout/HStack.vue'
+  import SitePicker from '@/components/premade/navbar/SitePicker.vue'
+  import DynamicImage from '@/components/utils/DynamicImage.vue'
 
-  const currentTime = ref('')
+  const currentTime: Ref<string> = ref('')
 
   const updateTime = () => {
-    const now = new Date()
+    const now: Date = new Date()
     const options: Intl.DateTimeFormatOptions = {
       hour: '2-digit',
       minute: '2-digit',
@@ -18,12 +18,12 @@
       timeZone: 'Europe/Paris',
       hour12: false,
     }
-    currentTime.value = now.toLocaleTimeString('en-GB', options);
+    currentTime.value = now.toLocaleTimeString('en-GB', options)
   }
 
   onMounted(() => {
-    updateTime() // Initialize immediately
-    setInterval(updateTime, 1000) // Update every second
+    updateTime()
+    setInterval(updateTime, 1000)
   })
 </script>
 
@@ -47,7 +47,7 @@
             GitHub
           </button>
         </a>
-        <a href="mailto:ash@asboy2035.com" class="spaced">
+        <a href="mailto:ash@a35.dev" class="spaced">
           <icon icon="solar:plain-line-duotone" />
           Email
         </a>

@@ -1,16 +1,16 @@
 <script setup lang="ts">
-  import Navbar from "@/components/premade/navbar/Navbar.vue"
-  import Grid from "@/components/layout/Grid.vue"
-  import Card from "@/components/layout/Card.vue"
-  import Spacer from "@/components/utils/Spacer.vue"
-  import BottomFooter from "@/components/premade/BottomFooter.vue"
-  import MoreLinks from "@/components/links/MoreLinks.vue"
-  import SocialLinks from "@/components/links/SocialLinks.vue"
-  import Description from "@/components/premade/Description.vue"
-  import VStack from "@/components/layout/VStack.vue"
-  import { Icon } from "@iconify/vue"
-  import SupportLinks from "@/components/links/SupportLinks.vue"
-  import Hero from "@/components/utils/Hero.vue"
+  import { Icon } from '@iconify/vue'
+  import Navbar from '@/components/premade/navbar/Navbar.vue'
+  import Grid from '@/components/layout/Grid.vue'
+  import Card from '@/components/layout/Card.vue'
+  import Spacer from '@/components/utils/Spacer.vue'
+  import BottomFooter from '@/components/premade/BottomFooter.vue'
+  import MoreLinks from '@/components/links/MoreLinks.vue'
+  import SocialLinks from '@/components/links/SocialLinks.vue'
+  import Description from '@/components/premade/Description.vue'
+  import VStack from '@/components/layout/VStack.vue'
+  import SupportLinks from '@/components/links/SupportLinks.vue'
+  import Hero from '@/components/utils/Hero.vue'
 
   useHead({
     title: "ash's Links",
@@ -42,11 +42,11 @@
       </Card>
     </grid>
 
-    <social-links />
-    <support-links />
-    <more-links />
+    <SocialLinks />
+    <SupportLinks />
+    <MoreLinks />
     <BottomFooter />
 
-    <navbar />
+    <Navbar />
   </div>
 </template>

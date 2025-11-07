@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  import Navbar from "@/components/premade/navbar/Navbar.vue"
-  import Hero from "@/components/utils/Hero.vue"
-  import {launcherCreators} from "@/data/launchers/launcherCreators"
-  import LauncherCard from "@/components/premade/navbar/LauncherCard.vue"
-  import BottomFooter from "~/components/premade/BottomFooter.vue";
+  import { launcherCreators } from '@/data/launchers/launcherCreators'
+  import Navbar from '@/components/premade/navbar/Navbar.vue'
+  import Hero from '@/components/utils/Hero.vue'
+  import LauncherCard from '@/components/premade/navbar/LauncherCard.vue'
+  import BottomFooter from '@/components/premade/BottomFooter.vue'
 
   useHead({
     title: "ash - Creators",

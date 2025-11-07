@@ -1,11 +1,9 @@
 # NuxtSite
 
-[My site](https://asboy2035.com), now in Nuxt!
-
----
+[My site](https://a35.dev), now in Nuxt!
 
 ## Thanks
-Many thanks to all the projects that make this site possible.
+Many thanks to all the projects, tools, and providers that make this site possible.
 
 ### PangramPangram
 [pangrampangram.com](https://pangrampangram.com/)
@@ -19,7 +17,7 @@ Many thanks to all the projects that make this site possible.
 These fonts are being used non-commercially.
 If you'd like to use them commercially, buy a license.
 
-### Packages/Frameworks
+### Packages & Frameworks
 - [**Vue.js:**](https://vuejs.org)
   Awesome web framework.
 - [**Nuxt:**](https://nuxt.com)
@@ -41,7 +39,21 @@ If you'd like to use them commercially, buy a license.
 - [**Sass:**](https://sass-lang.com)
   CSS with superpowers. (And prettiness)
 
+### External Tools & Software
+- [**PhpStorm, WebStorm, and IntelliJ IDEA Ultimate:**](https://jetbrains.com) 
+  Awesome IDEs!
+- [**Pixelmator Pro:**](https://pixelmator.com/pro/) 
+  Graphic design software.
+- [**Tower:**](https://www.git-tower.com/)
+  Fantastic Git client for macOS/Windows.
+- [**Yandex Browser:**](https://browser.yandex.ru)
+  Nice browser I use for testing.
+- **[GitHub](https://github.com), [Cloudflare](https://cloudflare.com), and [Vercel](https://vercel.com)**:
+  Git/Web hosting!
+
 ### Contributors
 - Liz: Design help
+
+---
 
 And, thank you!

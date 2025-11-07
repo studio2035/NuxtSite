@@ -1,14 +1,14 @@
 <template>
-  <transitionable ref="transitionable">
+  <Transitionable ref="transitionable">
     <h1 class="hidden">Your CSS is disabled!</h1>
 
-    <div id="app">
-    </div>
+    <div id="app" />
     <NuxtPage/>
+
     <div class="progBlurContainer">
-      <ProgressiveBlur class="progBlur" blur="48" border-radius="0"/>
+      <ProgressiveBlur class="progBlur" :blur="48" :border-radius="0"/>
     </div>
-  </transitionable>
+  </Transitionable>
 
   <img
     class="siteBackground"
@@ -17,11 +17,11 @@
     loading="lazy"
   />
 
-  <transition-element ref="cover"/>
+  <TransitionElement ref="cover"/>
 
-  <modal v-if="showDomainTip">
+  <Modal v-if="showDomainTip">
     <h1>You're on the old domain!</h1>
-    <p>Access this site at asboy2035.com for a cleaner link!</p>
+    <p>Access this site at a35.dev for a cleaner link!</p>
     <Spacer />
 
     <HStack class="autoSpace fullWidth">
@@ -31,58 +31,61 @@
         <button>Let's go!</button>
       </a>
     </HStack>
-  </modal>
+  </Modal>
 </template>
 
-<script setup>
-import {ref, onMounted} from 'vue'
-import {useHead, useRouter} from '#app'
-import TransitionElement from '@/components/premade/TransitionElement.vue'
-import Transitionable from '@/components/premade/Transitionable.vue'
-import Modal from '@/components/utils/Modal.vue'
-import Spacer from '@/components/utils/Spacer.vue'
-import {ProgressiveBlur} from 'vue-progressive-blur'
-import HStack from "@/components/layout/HStack.vue"
+<script setup lang="ts">
+  import { ref, onMounted } from 'vue'
+  import { useHead, useRouter } from '#app'
+  import type { Ref } from 'vue'
+  import type { Router } from '#vue-router'
 
-const showDomainTip = ref(false)
-const redirectLink = ref('') // make it reactive
+  import { ProgressiveBlur } from 'vue-progressive-blur'
+  import TransitionElement from '@/components/premade/TransitionElement.vue'
+  import Transitionable from '@/components/premade/Transitionable.vue'
+  import Modal from '@/components/utils/Modal.vue'
+  import Spacer from '@/components/utils/Spacer.vue'
+  import HStack from '@/components/layout/HStack.vue'
 
-onMounted(() => {
-  // Now it's safe to access location
-  if (location.hostname.includes('pages.dev')) {
-    showDomainTip.value = true
-  }
+  const showDomainTip: Ref<boolean> = ref(false)
+  const redirectLink: Ref<string> = ref('')
+  const cover: Ref = ref(null)
+  const transitionable: Ref = ref(null)
+  const router: Router = useRouter()
 
-  redirectLink.value = `https://asboy2035.com${location.pathname}${location.search}${location.hash}`
+  onMounted(() => {
+    if (location.hostname.includes('pages.dev')) {
+      showDomainTip.value = true
+    }
 
-  router.beforeEach((to, from, next) => {
-    transitionable.value?.show()
-    cover.value?.show()
-    setTimeout(() => {
-      next()
-    }, 400)
+    redirectLink.value = `https://a35.dev${location.pathname}${location.search}${location.hash}`
+
+    router.beforeEach((_to, _from, next) => {
+      transitionable.value?.show()
+      cover.value?.show()
+      setTimeout(() => {
+        next()
+      }, 400)
+    })
+
+    router.afterEach(() => {
+      setTimeout(() => {
+        transitionable.value?.hide()
+        cover.value?.hide()
+      }, 200)
+    })
+
+    // Hide the loading screen when mounted
+    const loader = document.getElementById('loading-screen')
+    loader?.classList.add('hidden')
   })
 
-  router.afterEach(() => {
-    setTimeout(() => {
-      transitionable.value?.hide()
-      cover.value?.hide()
-    }, 200)
+  // Add avatar to head
+  useHead({
+    link: [
+      { rel: 'icon', type: 'image/png', href: '/images/avatar.webp' },
+    ]
   })
-
-  // Hide the loading screen when mounted
-  const loader = document.getElementById('loading-screen')
-  loader?.classList.add('hidden')
-})
-
-const cover = ref(null)
-const transitionable = ref(null)
-const router = useRouter()
-useHead({
-  link: [
-    {rel: 'icon', type: 'image/png', href: '/images/avatar.webp'},
-  ]
-})
 </script>
 
 <style scoped lang="sass">

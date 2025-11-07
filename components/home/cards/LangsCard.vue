@@ -1,10 +1,10 @@
 <script setup lang="ts">
-  import Card from "@/components/layout/Card.vue"
-  import Grid from "@/components/layout/Grid.vue"
-  import Spacer from "@/components/utils/Spacer.vue"
-  import CardTitle from "@/components/utils/CardTitle.vue"
-  import IconItem from "@/components/layout/IconItem.vue"
-  import VStack from "~/components/layout/VStack.vue";
+  import Card from '@/components/layout/Card.vue'
+  import Grid from '@/components/layout/Grid.vue'
+  import Spacer from '@/components/utils/Spacer.vue'
+  import CardTitle from '@/components/utils/CardTitle.vue'
+  import IconItem from '@/components/layout/IconItem.vue'
+  import VStack from '@/components/layout/VStack.vue'
 </script>
 
 <template>

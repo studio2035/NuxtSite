@@ -1,8 +1,8 @@
 <script setup>
-  import Card from "@/components/layout/Card.vue"
-  import VStack from "@/components/layout/VStack.vue"
-  import HStack from "@/components/layout/HStack.vue"
-  import InteriorItem from "@/components/layout/InteriorItem.vue"
+  import Card from '@/components/layout/Card.vue'
+  import VStack from '@/components/layout/VStack.vue'
+  import HStack from '@/components/layout/HStack.vue'
+  import InteriorItem from '@/components/layout/InteriorItem.vue'
 
   defineProps(['data'])
 </script>

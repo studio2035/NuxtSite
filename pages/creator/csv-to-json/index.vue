@@ -1,86 +1,85 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import HStack from '@/components/layout/HStack.vue'
-import CardTitle from '@/components/utils/CardTitle.vue'
-import Navbar from "@/components/premade/navbar/Navbar.vue"
-import {Icon} from "@iconify/vue"
+  import { ref } from 'vue'
+  import { Icon } from '@iconify/vue'
+  import HStack from '@/components/layout/HStack.vue'
+  import CardTitle from '@/components/utils/CardTitle.vue'
+  import Navbar from '@/components/premade/navbar/Navbar.vue'
 
-interface CSVRow extends Record<string, unknown> {}
+  interface CSVRow extends Record<string, unknown> {}
 
-const jsonOutput = ref<CSVRow[] | null>(null)
-const csvFileName = ref<string>('')
-const outputContainerVisible = ref<boolean>(false)
+  const jsonOutput = ref<CSVRow[] | null>(null)
+  const csvFileName = ref<string>('')
+  const outputContainerVisible = ref<boolean>(false)
 
-function handleFileUpload(event: Event): void {
-  const input = event.target as HTMLInputElement
-  if (!input.files || input.files.length === 0) {
-    alert('Select a CSV file first.')
-    return
+  function handleFileUpload(event: Event): void {
+    const input = event.target as HTMLInputElement
+    const file = input.files?.[0]
+
+    if (!file) {
+      alert('Select a CSV file first.')
+      return
+    }
+
+    csvFileName.value = file.name
+    const reader = new FileReader()
+
+    reader.onload = (e: ProgressEvent<FileReader>) => {
+      if (!e.target?.result) return
+      const csvText = e.target.result.toString()
+      jsonOutput.value = csvToJson(csvText)
+      outputContainerVisible.value = true
+    }
+
+    reader.readAsText(file)
   }
 
-  const file = input.files[0]
-  csvFileName.value = file.name
-  const reader = new FileReader()
+  function csvToJson(csv: string): CSVRow[] {
+    const lines: string[] = csv
+      .split('\n')
+      .map(line => line.trim())
+      .filter(line => line)
 
-  reader.onload = (e: ProgressEvent<FileReader>) => {
-    if (!e.target?.result) return
-    const csvText = e.target.result.toString()
-    jsonOutput.value = csvToJson(csvText)
-    outputContainerVisible.value = true
-  }
+    if (lines.length === 0) return []
 
-  reader.readAsText(file)
-}
-
-function csvToJson(csv: string): CSVRow[] {
-  const lines: string[] = csv
-    .split('\n')
-    .map(line => line.trim())
-    .filter(line => line)
-
-  const headers: string[] = lines[0]
-    .split(',')
-    .map(
-      h => h
-        .trim()
-        .replace(/^"|"$/g, '')
-    )
-
-  return lines.slice(1).map(line => {
-    const values: string[] = line
+    const headers: string[] = lines[0]!
       .split(',')
-      .map(
-        v => v
-          .trim()
-          .replace(/^"|"$/g, '')
-      )
-    const obj: CSVRow = {}
+      .map(h => h.trim().replace(/^"|"$/g, ''))
 
-    headers.forEach((h, i) => {
-      let value: any = values[i] || ''
+    return lines.slice(1).map(line => {
+      const values: string[] = line
+        .split(',')
+        .map(
+          v => v
+            .trim()
+            .replace(/^"|"$/g, '')
+        )
+      const obj: CSVRow = {}
 
-      if (value.toLowerCase() === 'true') value = true
-      else if (value.toLowerCase() === 'false') value = false
+      headers.forEach((h, i) => {
+        let value: any = values[i] || ''
 
-      obj[h] = value
+        if (value.toLowerCase() === 'true') value = true
+        else if (value.toLowerCase() === 'false') value = false
+
+        obj[h] = value
+      })
+      return obj
     })
-    return obj
-  })
-}
+  }
 
-function downloadJson(): void {
-  if (!jsonOutput.value) return
+  function downloadJson(): void {
+    if (!jsonOutput.value) return
 
-  const jsonStr = JSON.stringify(jsonOutput.value, null, 4)
-  const blob = new Blob([jsonStr], { type: 'application/json' })
-  const a = document.createElement('a')
+    const jsonStr = JSON.stringify(jsonOutput.value, null, 4)
+    const blob = new Blob([jsonStr], { type: 'application/json' })
+    const a = document.createElement('a')
 
-  a.href = URL.createObjectURL(blob)
-  a.download = csvFileName.value.replace('.csv', '.json').replace('.CSV', '.json')
-  document.body.appendChild(a)
-  a.click()
-  document.body.removeChild(a)
-}
+    a.href = URL.createObjectURL(blob)
+    a.download = csvFileName.value.replace('.csv', '.json').replace('.CSV', '.json')
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+  }
 </script>
 
 <template>
@@ -107,7 +106,7 @@ function downloadJson(): void {
       <pre>{{ JSON.stringify(jsonOutput, null, 2) }}</pre>
     </div>
 
-    <navbar>
+    <Navbar>
       <button
         :class="{ 'hidden': !outputContainerVisible }"
         @click="downloadJson"
@@ -116,7 +115,7 @@ function downloadJson(): void {
         <Icon icon="solar:download-minimalistic-bold-duotone" />
         Download
       </button>
-    </navbar>
+    </Navbar>
   </div>
 </template>
 

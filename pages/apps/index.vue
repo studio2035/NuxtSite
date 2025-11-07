@@ -1,12 +1,12 @@
 <script setup lang="ts">
-  import Hero from "@/components/utils/Hero.vue"
-  import Spacer from "@/components/utils/Spacer.vue"
-  import Navbar from "@/components/premade/navbar/Navbar.vue"
-  import {Icon} from "@iconify/vue"
-  import AppsCategoryList from "@/components/apps/AppsCategoryList.vue"
-  import BottomFooter from "@/components/premade/BottomFooter.vue"
-  import { ref, onMounted } from "vue"
-  import type {AppCategory} from "@/types/appsViews"
+  import { Icon } from '@iconify/vue'
+  import { ref, onMounted } from 'vue'
+  import type { AppCategory } from '@/types/appsViews'
+  import Hero from '@/components/utils/Hero.vue'
+  import Spacer from '@/components/utils/Spacer.vue'
+  import Navbar from '@/components/premade/navbar/Navbar.vue'
+  import AppsCategoryList from '@/components/apps/AppsCategoryList.vue'
+  import BottomFooter from '@/components/premade/BottomFooter.vue'
 
   useHead({
     title: "ash's Apps",
@@ -49,7 +49,7 @@
 
     <p class="light">
       <a
-        href="https://guides.asboy2035.com/misc/web/pwaInstall"
+        href="https://g.a35.dev/misc/web/pwaInstall"
         target="_blank"
         class="prominentLink"
       >
@@ -58,7 +58,7 @@
     </p>
 
     <BottomFooter />
-    <navbar />
+    <Navbar />
   </div>
 </template>
 

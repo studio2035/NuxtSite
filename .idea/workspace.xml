@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="cleanups, domain updates, added more sites to site list, updated imports styles, code style improvements, resolve issues, update Nuxt, update site version">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="round avatar corners :)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/button.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/button.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/fonts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/fonts.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/global.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +113,7 @@
       <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -559,6 +562,11 @@
       <workItem from="1762511489909" duration="487000" />
       <workItem from="1762531509763" duration="8134000" />
       <workItem from="1762545628346" duration="5000" />
+      <workItem from="1762545636804" duration="112000" />
+      <workItem from="1762545868157" duration="11647000" />
+      <workItem from="1762774033188" duration="1186000" />
+      <workItem from="1762937899842" duration="5000" />
+      <workItem from="1763302524689" duration="1176000" />
     </task>
     <task id="LOCAL-00001" summary="updated cards, updated buttons, updated loader, code improvements">
       <option name="closed" value="true" />
@@ -904,7 +912,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762543099030</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="round avatar corners :)">
+      <option name="closed" value="true" />
+      <created>1762545732313</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1762545732313</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -922,7 +938,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new specular highlights design" />
     <MESSAGE value="update interface" />
     <MESSAGE value="update more links card" />
     <MESSAGE value="improve styling, nuxt pages, hero, transition, cards, interior items, new avatar asset" />
@@ -947,7 +962,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="cleanups, domain updates, added more sites to site list, updated imports styles, code style improvements, resolve issues" />
     <MESSAGE value="cleanups, domain updates, added more sites to site list, updated imports styles, code style improvements, resolve issues, update Nuxt, update site version" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanups, domain updates, added more sites to site list, updated imports styles, code style improvements, resolve issues, update Nuxt, update site version" />
+    <MESSAGE value="round avatar corners :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="round avatar corners :)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

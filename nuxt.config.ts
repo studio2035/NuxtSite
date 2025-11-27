@@ -13,7 +13,14 @@ export default defineNuxtConfig({
       ]
     },
   },
-  compatibilityDate: '2025-08-09',
+  compatibilityDate: '2025-11-27',
+  runtimeConfig: {
+    public: {
+      posthogPublicKey: 'phc_M5dK6A49VD1zj7L5iamsBbIO4RhikB8FbxUyVfTlEZy',
+      posthogHost: 'https://us.i.posthog.com',
+      posthogDefaults: '2025-05-24'
+    }
+  },
   modules: [ '@vite-pwa/nuxt' ],
   pwa: {
     registerType: 'autoUpdate',

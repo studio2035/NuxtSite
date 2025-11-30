@@ -1,5 +1,5 @@
 import { defineNuxtPlugin, useRouter } from '#app'
-import type {RouteLocation, Router} from '#vue-router'
+import type { RouteLocation, Router } from '#vue-router'
 
 export default defineNuxtPlugin((): void => {
   const router: Router = useRouter()

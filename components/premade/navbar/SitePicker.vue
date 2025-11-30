@@ -8,22 +8,15 @@
   import HStack from '@/components/layout/HStack.vue'
   import Spacer from '@/components/utils/Spacer.vue'
 
-  const isMain = ref(true)
   const isOldMain = ref(false)
   const showingShareModal = ref(false)
 
-  function isMainHost(): boolean {
-    const host = window.location.href
-    return !host.includes("alt.asboy2035.com")
-  }
-
   function isOldMainHost(): boolean {
     const host = window.location.href
-    return host.includes("asboy2035.com")
+    return !host.includes("a35.dev")
   }
 
   onMounted(() => {
-    isMain.value = isMainHost()
     isOldMain.value = isOldMainHost()
   })
 </script>
@@ -70,7 +63,7 @@
           <h3>Hosts</h3>
           <HStack>
             <a href="https://a35.dev">
-              <button :disabled="isMain">
+              <button :disabled="!isOldMain">
                 <Icon icon="solar:planet-bold-duotone" />
                 Main
               </button>
@@ -80,13 +73,6 @@
               <button :disabled="isOldMain">
                 <Icon icon="solar:planet-line-duotone" />
                 Old
-              </button>
-            </a>
-
-            <a href="https://alt.asboy2035.com/">
-              <button :disabled="!isMain" id="goToAltButton">
-                <Icon icon="solar:planet-line-duotone" width="24" height="24" />
-                Alt
               </button>
             </a>
           </HStack>

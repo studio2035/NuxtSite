@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update sitepicker">
-      <change afterPath="$PROJECT_DIR$/public/bimi.svg" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add BIMI logo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bimi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/bimi.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -577,15 +577,8 @@
       <workItem from="1764504035679" duration="23000" />
       <workItem from="1764506262526" duration="2000000" />
       <workItem from="1765116927763" duration="214000" />
-      <workItem from="1765117154589" duration="875000" />
-    </task>
-    <task id="LOCAL-00001" summary="updated cards, updated buttons, updated loader, code improvements">
-      <option name="closed" value="true" />
-      <created>1750853825893</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1750853825893</updated>
+      <workItem from="1765117154589" duration="936000" />
+      <workItem from="1765118693636" duration="35000" />
     </task>
     <task id="LOCAL-00002" summary="glass improvvements, add background image, refactor button code, revert button effects">
       <option name="closed" value="true" />
@@ -971,7 +964,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764507436253</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="add BIMI logo">
+      <option name="closed" value="true" />
+      <created>1765118088260</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1765118088260</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -989,7 +990,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new navigationtitle design, updated toolbox" />
     <MESSAGE value="navigationtitle animation improvements" />
     <MESSAGE value="add share menu to site picker" />
     <MESSAGE value="bump version" />
@@ -1014,7 +1014,8 @@
     <MESSAGE value="add ids to buttons/links for better tracking" />
     <MESSAGE value="update meta, update package versioning" />
     <MESSAGE value="update sitepicker" />
-    <option name="LAST_COMMIT_MESSAGE" value="update sitepicker" />
+    <MESSAGE value="add BIMI logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add BIMI logo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

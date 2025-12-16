@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add BIMI logo">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="convert to tinysvg">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bimi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/bimi.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/NavButtons.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/NavButtons.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/avatar.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/avatar.webp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,52 +62,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ash/IdeaProjects/NuxtSite/public&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;Sass&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.build.executor&quot;: &quot;Run&quot;,
-    &quot;npm.cleanup.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.preview.executor&quot;: &quot;Run&quot;,
-    &quot;npm.reInit.executor&quot;: &quot;Run&quot;,
-    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/ash/Applications/PhpStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "javascript.preferred.runtime.type.id": "node",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public/images",
+    "list.type.of.created.stylesheet": "Sass",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.cleanup.executor": "Run",
+    "npm.dev.executor": "Run",
+    "npm.preview.executor": "Run",
+    "npm.reInit.executor": "Run",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/ash/Applications/PhpStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/pages/create" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
@@ -195,8 +202,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-PS-253.28294.257" />
-        <option value="bundled-php-predefined-a98d8de5180a-09080813851e-com.jetbrains.php.sharedIndexes-PS-253.28294.257" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PS-253.29346.44" />
+        <option value="bundled-php-predefined-a98d8de5180a-0e0d91225499-com.jetbrains.php.sharedIndexes-PS-253.29346.44" />
       </set>
     </attachedChunks>
   </component>
@@ -578,15 +585,9 @@
       <workItem from="1764506262526" duration="2000000" />
       <workItem from="1765116927763" duration="214000" />
       <workItem from="1765117154589" duration="936000" />
-      <workItem from="1765118693636" duration="35000" />
-    </task>
-    <task id="LOCAL-00002" summary="glass improvvements, add background image, refactor button code, revert button effects">
-      <option name="closed" value="true" />
-      <created>1750875633374</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1750875633374</updated>
+      <workItem from="1765118693636" duration="3932000" />
+      <workItem from="1765824233517" duration="478000" />
+      <workItem from="1765885198317" duration="959000" />
     </task>
     <task id="LOCAL-00003" summary="improve footer, add csvtojson">
       <option name="closed" value="true" />
@@ -972,7 +973,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765118088260</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="convert to tinysvg">
+      <option name="closed" value="true" />
+      <created>1765118741136</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1765118741136</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -990,7 +999,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="navigationtitle animation improvements" />
     <MESSAGE value="add share menu to site picker" />
     <MESSAGE value="bump version" />
     <MESSAGE value="update astro to astro+" />
@@ -1015,7 +1023,8 @@
     <MESSAGE value="update meta, update package versioning" />
     <MESSAGE value="update sitepicker" />
     <MESSAGE value="add BIMI logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add BIMI logo" />
+    <MESSAGE value="convert to tinysvg" />
+    <option name="LAST_COMMIT_MESSAGE" value="convert to tinysvg" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -13,7 +13,7 @@
 
   function isOldMainHost(): boolean {
     const host = window.location.href
-    return !host.includes("a35.dev")
+    return host.includes("pages.dev")
   }
 
   onMounted(() => {
@@ -32,51 +32,39 @@
         </HStack>
 
         <RouterLink to="/">
-          <site-pick
+          <SitePick
             title="Portfolio"
             icon="solar:bag-heart-line-duotone"
           />
         </RouterLink>
 
         <a href="https://g.a35.dev/">
-          <site-pick
+          <SitePick
             title="Guides"
             icon="solar:book-line-duotone"
           />
         </a>
 
+        <a href="https://big.a35.dev">
+          <SitePick
+            title="BIG"
+            icon="solar:posts-carousel-vertical-line-duotone"
+          />
+        </a>
+
         <a href="https://fonts.asboy2035.com/">
-          <site-pick
+          <SitePick
             title="Fonts"
             icon="solar:text-line-duotone"
           />
         </a>
 
         <a href="https://pages.asboy2035.com/">
-          <site-pick
+          <SitePick
             title="Pages"
             icon="solar:documents-line-duotone"
           />
         </a>
-
-        <VStack>
-          <h3>Hosts</h3>
-          <HStack>
-            <a href="https://a35.dev">
-              <button :disabled="!isOldMain">
-                <Icon icon="solar:planet-bold-duotone" />
-                Main
-              </button>
-            </a>
-
-            <a href="https://asboy2035.com">
-              <button :disabled="isOldMain">
-                <Icon icon="solar:planet-line-duotone" />
-                Old
-              </button>
-            </a>
-          </HStack>
-        </VStack>
       </VStack>
     </Card>
 

@@ -21,7 +21,7 @@
 
   <Modal v-if="showDomainTip">
     <h1>You're on the old domain!</h1>
-    <p>Access this site at a35.dev for a cleaner link!</p>
+    <p>Access this site at asboy2035.com for a cleaner link!</p>
     <Spacer />
 
     <HStack class="autoSpace fullWidth">
@@ -58,7 +58,7 @@
       showDomainTip.value = true
     }
 
-    redirectLink.value = `https://a35.dev${location.pathname}${location.search}${location.hash}`
+    redirectLink.value = `https://asboy2035.com${location.pathname}${location.search}${location.hash}`
 
     router.beforeEach((_to, _from, next) => {
       transitionable.value?.show()

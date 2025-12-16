@@ -79,13 +79,6 @@
     const loader = document.getElementById('loading-screen')
     loader?.classList.add('hidden')
   })
-
-  // Add avatar to head
-  useHead({
-    link: [
-      { rel: 'icon', type: 'image/png', href: '/images/avatar.webp' },
-    ]
-  })
 </script>
 
 <style scoped lang="sass">

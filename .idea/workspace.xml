@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="convert to tinysvg">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update domains">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/NavButtons.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/NavButtons.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/avatar.webp" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/avatar.webp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +71,7 @@
     "git-widget-placeholder": "master",
     "javascript.preferred.runtime.type.id": "node",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public/images",
+    "last_opened_file_path": "/Users/ash/IdeaProjects/NuxtSite/public",
     "list.type.of.created.stylesheet": "Sass",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -106,8 +101,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/pages/create" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
@@ -587,15 +582,8 @@
       <workItem from="1765117154589" duration="936000" />
       <workItem from="1765118693636" duration="3932000" />
       <workItem from="1765824233517" duration="478000" />
-      <workItem from="1765885198317" duration="959000" />
-    </task>
-    <task id="LOCAL-00003" summary="improve footer, add csvtojson">
-      <option name="closed" value="true" />
-      <created>1751190492612</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1751190492612</updated>
+      <workItem from="1765885198317" duration="2344000" />
+      <workItem from="1765890158525" duration="177000" />
     </task>
     <task id="LOCAL-00004" summary="improve footer, add csvtojson">
       <option name="closed" value="true" />
@@ -981,7 +969,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765118741136</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="update domains">
+      <option name="closed" value="true" />
+      <created>1765886206831</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1765886206832</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -999,7 +995,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add share menu to site picker" />
     <MESSAGE value="bump version" />
     <MESSAGE value="update astro to astro+" />
     <MESSAGE value="update tewfa to authie, remove old france map asset" />
@@ -1024,7 +1019,8 @@
     <MESSAGE value="update sitepicker" />
     <MESSAGE value="add BIMI logo" />
     <MESSAGE value="convert to tinysvg" />
-    <option name="LAST_COMMIT_MESSAGE" value="convert to tinysvg" />
+    <MESSAGE value="update domains" />
+    <option name="LAST_COMMIT_MESSAGE" value="update domains" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

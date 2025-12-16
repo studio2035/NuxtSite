@@ -9,6 +9,7 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.asboy2035.com', crossorigin: '' },
         { rel: 'dns-prefetch', href: 'https://api.iconify.design' },
         { rel: 'dns-prefetch', href: 'https://fonts.asboy2035.com' },
+        { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' },
         { rel: 'manifest', href: '/manifest.webmanifest' }
       ]
     },

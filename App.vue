@@ -1,21 +1,19 @@
 <template>
-  <Transitionable ref="transitionable">
-    <h1 class="hidden">Your CSS is disabled!</h1>
+  <h1 class="hidden">Your CSS is disabled!</h1>
 
-    <div id="app" />
-    <NuxtPage/>
+  <div id="app" />
+  <NuxtPage/>
 
-    <div class="progBlurContainer">
-      <ProgressiveBlur class="progBlur" :blur="48" :border-radius="0"/>
-    </div>
-  </Transitionable>
+  <div class="progBlurContainer">
+    <ProgressiveBlur class="progBlur" :blur="48" :border-radius="0"/>
+  </div>
 
-  <img
-    class="siteBackground"
-    src="/PageBackground.svg"
-    alt="Background" aria-hidden="true"
-    loading="lazy"
-  />
+<img
+  class="siteBackground"
+  src="/PageBackground.svg"
+  alt="Background" aria-hidden="true"
+  loading="lazy"
+/>
 
   <TransitionElement ref="cover"/>
 
@@ -36,13 +34,12 @@
 
 <script setup lang="ts">
   import { ref, onMounted } from 'vue'
-  import { useHead, useRouter } from '#app'
+  import { useRouter } from '#app'
   import type { Ref } from 'vue'
   import type { Router } from '#vue-router'
 
   import { ProgressiveBlur } from 'vue-progressive-blur'
   import TransitionElement from '@/components/premade/TransitionElement.vue'
-  import Transitionable from '@/components/premade/Transitionable.vue'
   import Modal from '@/components/utils/Modal.vue'
   import Spacer from '@/components/utils/Spacer.vue'
   import HStack from '@/components/layout/HStack.vue'
@@ -50,7 +47,6 @@
   const showDomainTip: Ref<boolean> = ref(false)
   const redirectLink: Ref<string> = ref('')
   const cover: Ref = ref(null)
-  const transitionable: Ref = ref(null)
   const router: Router = useRouter()
 
   onMounted(() => {
@@ -61,7 +57,6 @@
     redirectLink.value = `https://asboy2035.com${location.pathname}${location.search}${location.hash}`
 
     router.beforeEach((_to, _from, next) => {
-      transitionable.value?.show()
       cover.value?.show()
       setTimeout(() => {
         next()
@@ -70,7 +65,6 @@
 
     router.afterEach(() => {
       setTimeout(() => {
-        transitionable.value?.hide()
         cover.value?.hide()
       }, 200)
     })

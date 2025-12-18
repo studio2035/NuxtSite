@@ -1,25 +1,24 @@
-<script setup>
+<script setup lang="ts">
   import { Icon } from '@iconify/vue'
   import { ref } from 'vue'
 
-  const isActive = ref(false)
-  const hideCursor = ref(false)
+  const isActive: Ref<boolean> = ref(false)
+  const showingConnecting: Ref<boolean> = ref(false)
 
   function show() {
     isActive.value = true
-    hideCursorTemporarily()
+    showConnecting()
   }
 
   function hide() {
     isActive.value = false
+    showingConnecting.value = false
   }
 
-  function hideCursorTemporarily() {
-    hideCursor.value = true
-
+  function showConnecting() {
     setTimeout(() => {
-      hideCursor.value = false
-    }, 3000)
+      showingConnecting.value = true
+    }, 4000)
   }
 
   defineExpose({ show, hide })
@@ -33,7 +32,7 @@
 
   <div
     class="transitionElement"
-    :class="{ active: isActive, hideCursor: hideCursor }"
+    :class="{ active: isActive }"
   >
     <Icon
       icon="svg-spinners:90-ring-with-bg"
@@ -41,7 +40,7 @@
       class="spinner"
     />
 
-    <p :class="{ hidden: hideCursor }">Connecting...</p>
+    <p :class="{ hidden: !showingConnecting }">Connecting...</p>
   </div>
 </template>
 
@@ -57,16 +56,18 @@
     bottom: 0
     left: 0
     right: 0
-
-    background: colors.$foregroundColor
-    backdrop-filter: blur(3rem)
-    border-radius: 0
     z-index: 2
-    transform: translateY(-100%)
+    pointer-events: none
+    background: colors.$backgroundColor
+
+    // Animation
+    filter: blur(1rem)
+    opacity: 0
     transition: 0.3s ease
 
-  .transitionElement.active
-    transform: translateY(0%)
+    &.active
+      opacity: 0.8
+      filter: none
 
   .progressBar
     position: fixed
@@ -105,9 +106,6 @@
 
     100%
       transform: translateY(-100%)
-
-  .hideCursor
-    cursor: none
 
   .spinner
     width: 4rem

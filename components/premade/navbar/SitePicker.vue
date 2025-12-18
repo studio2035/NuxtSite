@@ -23,7 +23,7 @@
 
 <template>
   <VStack class="sitePicker">
-    <Card>
+    <Card v-if="!showingShareModal">
       <VStack class="fullWidth">
         <HStack class="autoSpace fullWidth">
           <h2>Sites</h2>
@@ -100,6 +100,7 @@
 
 <style lang="sass">
   .sitePicker
+    min-width: 15rem
     max-width: fit-content
 
     &.fullWidth

@@ -63,7 +63,7 @@
   .appCard
     flex-direction: row
     gap: 0.25rem
-    padding: 0.5rem 0.65rem
+    padding: 0.75rem
     align-items: center
     background: colors.$foregroundColor
 
@@ -73,21 +73,9 @@
 
   .appIcon
     position: relative
-    border-radius: 1rem
-    width: 3rem
-    height: 3rem
-
-    &::after
-      content: ""
-      position: absolute
-      top: 0
-      bottom: 0
-      left: 0
-      right: 0
-      border-radius: 1rem
-      border: 0.1rem colors.$shadowColor solid
-      mask: conic-gradient(from 45deg, black, transparent, black, transparent, black)
-      opacity: 0.4
+    border-radius: 0.75rem
+    width: 3.5rem
+    height: 3.5rem
 
   .appDetails
     display: flex
@@ -96,6 +84,7 @@
     align-items: flex-start
     flex-grow: 1
     overflow: scroll
+    scrollbar-width: none
     text-wrap: nowrap
     border-radius: 0.5rem
 

@@ -4,27 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add version indication, releases">
-      <change afterPath="$PROJECT_DIR$/utils/setHeadMeta.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/charCards/CardPreview.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/charCards/CustomizerPanel.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/creator/CreatorsCard.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/launchers/launcherApps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/launchers/LauncherApps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/launchers/launcherCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/launchers/LauncherCreators.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apps/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/creator/char-card/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/creator/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="remove char card creator, make head management more efficient, fix canonical updating">
       <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/links.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/links.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/playlists/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/updateCanonical.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/updateCanonical.client.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -607,15 +588,7 @@
       <workItem from="1766073313825" duration="3196000" />
       <workItem from="1766081765301" duration="6066000" />
       <workItem from="1766127599219" duration="10000" />
-      <workItem from="1766160492028" duration="10940000" />
-    </task>
-    <task id="LOCAL-00011" summary="improve toolbox &amp; footer">
-      <option name="closed" value="true" />
-      <created>1751212210628</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1751212210628</updated>
+      <workItem from="1766160492028" duration="11365000" />
     </task>
     <task id="LOCAL-00012" summary="improve toolbox &amp; apps list view">
       <option name="closed" value="true" />
@@ -1001,7 +974,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766165459911</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="remove char card creator, make head management more efficient, fix canonical updating">
+      <option name="closed" value="true" />
+      <created>1766171831463</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1766171831467</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1019,7 +1000,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update code styling, improve langs card, coloring improvements" />
     <MESSAGE value="updates to light mode coloring" />
     <MESSAGE value="use pangrampangram fonts!" />
     <MESSAGE value="add thanks and update meta" />
@@ -1044,7 +1024,8 @@
     <MESSAGE value="update images, add new wallpaper system" />
     <MESSAGE value="add snow :)" />
     <MESSAGE value="add version indication, releases" />
-    <option name="LAST_COMMIT_MESSAGE" value="add version indication, releases" />
+    <MESSAGE value="remove char card creator, make head management more efficient, fix canonical updating" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove char card creator, make head management more efficient, fix canonical updating" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

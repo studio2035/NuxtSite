@@ -12,7 +12,7 @@
   setHeadMeta({
     page: 'Home',
     subtitle: 'ash (@asboy2035) - Portfolio',
-    image: '/images/SitePreview.png'
+    image: '/images/SitePreview.jpg'
   })
 </script>
 

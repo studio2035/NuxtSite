@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="remove char card creator, make head management more efficient, fix canonical updating">
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-    </list>
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="update site preview image" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -588,15 +586,7 @@
       <workItem from="1766073313825" duration="3196000" />
       <workItem from="1766081765301" duration="6066000" />
       <workItem from="1766127599219" duration="10000" />
-      <workItem from="1766160492028" duration="11365000" />
-    </task>
-    <task id="LOCAL-00012" summary="improve toolbox &amp; apps list view">
-      <option name="closed" value="true" />
-      <created>1751212706815</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1751212706815</updated>
+      <workItem from="1766160492028" duration="11571000" />
     </task>
     <task id="LOCAL-00013" summary="rebrand PWA">
       <option name="closed" value="true" />
@@ -982,7 +972,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766171831467</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="update site preview image">
+      <option name="closed" value="true" />
+      <created>1766172368309</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1766172368309</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1000,7 +998,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updates to light mode coloring" />
     <MESSAGE value="use pangrampangram fonts!" />
     <MESSAGE value="add thanks and update meta" />
     <MESSAGE value="update coloring, update CSS handling" />
@@ -1025,7 +1022,8 @@
     <MESSAGE value="add snow :)" />
     <MESSAGE value="add version indication, releases" />
     <MESSAGE value="remove char card creator, make head management more efficient, fix canonical updating" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove char card creator, make head management more efficient, fix canonical updating" />
+    <MESSAGE value="update site preview image" />
+    <option name="LAST_COMMIT_MESSAGE" value="update site preview image" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

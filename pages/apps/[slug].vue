@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { ref, onMounted, computed } from 'vue'
+  import setHeadMeta from '@/utils/setHeadMeta'
   import { useRoute } from 'vue-router'
   import { apps } from '@/data/apps'
   import { marked } from 'marked'
@@ -29,25 +30,17 @@
     if (app) {
       const response = await fetch(app.longDescriptionMarkdown)
       longDescriptionRaw.value = await response.text()
+
+      setHeadMeta({
+        page: app.title,
+        subtitle: app.ogDescription,
+        image: app.socialPreview,
+        icon: app.iconPath,
+      })
     }
   })
 
-  if (app) {
-    useHead({
-      title: app.title,
-      meta: [
-        { name: 'description', content: app.ogDescription },
-        { property: 'og:title', content: app.title },
-        { property: 'og:description', content: app.ogDescription },
-        { property: 'og:image', content: app.socialPreview }
-      ],
-      link: [
-        { rel: 'icon', href: app.iconPath }
-      ]
-    })
-  }
-
-  function getIcon(type: string) {
+  function getIcon(type: string): Component {
     switch (type) {
       case 'github':
         return GithubIcon

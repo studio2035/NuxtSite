@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import setHeadMeta from '@/utils/setHeadMeta'
   import { Icon } from '@iconify/vue'
   import { ref, onMounted } from 'vue'
   import type { AppCategory } from '@/types/appsViews'
@@ -8,14 +9,10 @@
   import AppsCategoryList from '@/components/apps/AppsCategoryList.vue'
   import BottomFooter from '@/components/premade/BottomFooter.vue'
 
-  useHead({
-    title: "ash's Apps",
-    meta: [
-      { name: "description", content: "My web/Apple apps." },
-      { property: "og:title", content: "ash's Apps" },
-      { property: "og:description", content: "My web/Apple apps." },
-      { property: "og:image", content: "/images/Apps.jpg"}
-    ]
+  setHeadMeta({
+    page: 'Apps',
+    subtitle: 'My web/Apple apps.',
+    image: '/images/Apps.jpg'
   })
 
   const appsData = ref<AppCategory[]>([])

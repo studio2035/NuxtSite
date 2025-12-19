@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
-      name: 'Toolbox ∙ asboy2035',
+      name: 'Toolbox - Ash',
       short_name: 'Toolbox',
       description: 'asboy2035 Toolbox app.',
       theme_color: '#9f75e8',

@@ -1,6 +1,6 @@
 import type LauncherItem from '@/types/LauncherItem'
 
-export const launcherApps: LauncherItem[] = [
+export const LauncherApps: LauncherItem[] = [
   {
     name: 'Authie',
     link: 'https://authie.asboy2035.com',

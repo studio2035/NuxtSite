@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import setHeadMeta from '@/utils/setHeadMeta'
   import { ref, onMounted } from 'vue'
   import { Icon } from '@iconify/vue'
   import Card from '@/components/layout/Card.vue'
@@ -11,14 +12,10 @@
   import Navbar from '@/components/premade/navbar/Navbar.vue'
   import CardTitle from '@/components/utils/CardTitle.vue'
 
-  useHead({
-    title: "ash's Goodies",
-    meta: [
-      { name: "description", content: "Misc stuff from me." },
-      { property: "og:title", content: "ash's Goodies" },
-      { property: "og:description", content: "Misc stuff from me." },
-      { property: "og:image", content: "/images/Goodies.jpg" }
-    ]
+  setHeadMeta({
+    page: 'Goodies',
+    subtitle: 'Misc stuff from me.',
+    image: '/images/Goodies.jpg'
   })
 
   interface CursorAsset {

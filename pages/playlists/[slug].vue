@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import { ref, onMounted, computed } from 'vue'
   import { useRoute } from 'vue-router'
+  import setHeadMeta from '@/utils/setHeadMeta'
   import InteriorItem from '@/components/layout/InteriorItem.vue'
   import AppleMusic from '@/components/playlists/AppleMusic.vue'
   import Spotify from '@/components/playlists/Spotify.vue'
@@ -44,26 +45,22 @@
 
   const playlist = computed(() => playlists.value.find(p => p.slug === route.params.slug))
 
-  onMounted(() => {
-    fetchPlaylists()
+  onMounted(async () => {
+    await fetchPlaylists()
+      .then(() => {
+        if (playlist.value) {
+          setHeadMeta({
+            page: playlist.value.title,
+            subtitle: playlist.value.description,
+            image: '/images/Playlists.jpg',
+            icon: playlist.value.image,
+            group: 'Playlist'
+          })
+        }
+      })
   })
 
-  if (playlist.value) {
-    useHead({
-      title: `${playlist.value.title} (Playlist)`,
-      meta: [
-        { name: "description", content: playlist.value.description },
-        { property: "og:title", content: `${playlist.value.title} (Playlist)` },
-        { property: "og:description", content: playlist.value.description },
-        { property: "og:image", content: playlist.value.image },
-      ],
-      link: [
-        { rel: "icon", href: playlist.value.image }
-      ]
-    })
-  }
-
-  function getIconComponent(type: string) {
+  function getIconComponent(type: string): Component {
     switch (type) {
       case "apple":
         return AppleMusic
@@ -76,21 +73,6 @@
       default:
         return LinkIcon
     }
-  }
-
-  if (playlist.value) {
-    useHead({
-      title: `${playlist.value.title} (Playlist)`,
-      meta: [
-        { name: 'description', content: playlist.value.description },
-        { property: 'og:title', content: `${playlist.value.title} (Playlist)` },
-        { property: 'og:description', content: playlist.value.description },
-        { property: 'og:image', content: "/images/Playlists.jpg" },
-      ],
-      link: [
-        { rel: 'icon', href: playlist.value.image }
-      ]
-    })
   }
 </script>
 

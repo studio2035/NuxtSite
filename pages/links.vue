@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import setHeadMeta from '@/utils/setHeadMeta'
   import { Icon } from '@iconify/vue'
   import Navbar from '@/components/premade/navbar/Navbar.vue'
   import Grid from '@/components/layout/Grid.vue'
@@ -12,14 +13,10 @@
   import SupportLinks from '@/components/links/SupportLinks.vue'
   import Hero from '@/components/utils/Hero.vue'
 
-  useHead({
-    title: "ash's Links",
-    meta: [
-      { name: "description", content: "My socials, contacts, and more :)" },
-      { property: "og:title", content: "ash's Links" },
-      { property: "og:description", content: "My socials, contacts, and more :)" },
-      { property: "og:image", content: "/images/Links.jpg" }
-    ]
+  setHeadMeta({
+    page: 'Links',
+    subtitle: 'My socials, contacts, and more :)',
+    image: '/images/Links.jpg'
   })
 </script>
 

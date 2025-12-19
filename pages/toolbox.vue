@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { Icon } from '@iconify/vue'
   import { onMounted, ref } from 'vue'
-  import { launcherCreators } from '@/data/launchers/launcherCreators'
+  import { LauncherCreators } from '~/data/launchers/LauncherCreators'
   import type { AppCategory } from '@/types/appsViews'
 
   import VStack from '@/components/layout/VStack.vue'
@@ -28,10 +28,10 @@
   })
 
   useHead({
-    title: "Toolbox ∙ asboy2035",
+    title: "Toolbox - Ash",
     meta: [
       { name: "description", content: "asboy2035 Toolbox app." },
-      { property: "og:title", content: "Toolbox ∙ asboy2035" },
+      { property: "og:title", content: "Toolbox - Ash" },
       { property: "og:description", content: "asboy2035 Toolbox app." },
       { name: "viewport", content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" },
     ],
@@ -87,7 +87,7 @@
         title="Tools"
         icon="solar:sledgehammer-line-duotone"
         base-url="/toolbox"
-        :launcher-items="launcherCreators"
+        :launcher-items="LauncherCreators"
       />
 
       <divider />

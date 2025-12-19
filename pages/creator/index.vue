@@ -1,18 +1,15 @@
 <script setup lang="ts">
-  import { launcherCreators } from '@/data/launchers/launcherCreators'
+  import { LauncherCreators } from '~/data/launchers/LauncherCreators'
+  import setHeadMeta from '@/utils/setHeadMeta'
   import Navbar from '@/components/premade/navbar/Navbar.vue'
   import Hero from '@/components/utils/Hero.vue'
   import LauncherCard from '@/components/premade/navbar/LauncherCard.vue'
   import BottomFooter from '@/components/premade/BottomFooter.vue'
 
-  useHead({
-    title: "ash - Creators",
-    meta: [
-      { name: "description", content: "My tools and creators." },
-      { property: "og:title", content: "ash - Creators" },
-      { property: "og:description", content: "My tools and creators." },
-      { property: "og:image", content: "/images/Creator.jpg"}
-    ]
+  setHeadMeta({
+    page: 'Creators',
+    subtitle: 'My tools and creators.',
+    image: '/images/Creator.jpg'
   })
 </script>
 
@@ -27,7 +24,7 @@
       title="Tools"
       icon="solar:sledgehammer-line-duotone"
       base-url="/toolbox"
-      :launcher-items="launcherCreators"
+      :launcher-items="LauncherCreators"
     />
 
     <BottomFooter />

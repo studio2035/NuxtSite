@@ -2,8 +2,8 @@
   import { ref } from 'vue'
   import { Icon } from '@iconify/vue'
   import { ProgressiveBlur } from 'vue-progressive-blur'
-  import { launcherApps } from '@/data/launchers/launcherApps'
-  import { launcherCreators } from '@/data/launchers/launcherCreators'
+  import { LauncherApps } from '~/data/launchers/LauncherApps'
+  import { LauncherCreators } from '~/data/launchers/LauncherCreators'
 
   import HStack from '@/components/layout/HStack.vue'
   import VStack from '@/components/layout/VStack.vue'
@@ -44,14 +44,14 @@
           title="Apps"
           icon="solar:widget-2-line-duotone"
           base-url="/apps/"
-          :launcher-items="launcherApps"
+          :launcher-items="LauncherApps"
         />
 
         <LauncherCard
           title="Create..."
           icon="solar:pen-new-square-line-duotone"
           base-url="/creator/"
-          :launcher-items="launcherCreators"
+          :launcher-items="LauncherCreators"
         />
       </VStack>
     </FullscreenCover>

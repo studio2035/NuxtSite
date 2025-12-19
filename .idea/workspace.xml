@@ -4,15 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add snow :)">
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add version indication, releases">
+      <change afterPath="$PROJECT_DIR$/utils/setHeadMeta.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/BottomFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/BottomFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/charCards/CardPreview.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/charCards/CustomizerPanel.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/creator/CreatorsCard.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/premade/navbar/SitePicker.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/launchers/launcherApps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/launchers/LauncherApps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/launchers/launcherCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/launchers/LauncherCreators.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/snow.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/snow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/fonts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/fonts.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apps/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/[slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apps/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apps/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/creator/char-card/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/creator/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/goodies.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goodies.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/links.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/links.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/playlists/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playlists/[slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/toolbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/toolbox.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/updateCanonical.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/updateCanonical.client.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +40,8 @@
         <option value="Sass File" />
         <option value="Vue Composition API Component" />
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="JSON File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -595,15 +607,7 @@
       <workItem from="1766073313825" duration="3196000" />
       <workItem from="1766081765301" duration="6066000" />
       <workItem from="1766127599219" duration="10000" />
-      <workItem from="1766160492028" duration="4826000" />
-    </task>
-    <task id="LOCAL-00010" summary="improve toolbox w/ new header">
-      <option name="closed" value="true" />
-      <created>1751211123173</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1751211123173</updated>
+      <workItem from="1766160492028" duration="10940000" />
     </task>
     <task id="LOCAL-00011" summary="improve toolbox &amp; footer">
       <option name="closed" value="true" />
@@ -989,7 +993,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766087292565</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="add version indication, releases">
+      <option name="closed" value="true" />
+      <created>1766165459910</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1766165459911</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1007,7 +1019,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add aria label to mobile nav button" />
     <MESSAGE value="update code styling, improve langs card, coloring improvements" />
     <MESSAGE value="updates to light mode coloring" />
     <MESSAGE value="use pangrampangram fonts!" />
@@ -1032,7 +1043,8 @@
     <MESSAGE value="remove caching rules" />
     <MESSAGE value="update images, add new wallpaper system" />
     <MESSAGE value="add snow :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add snow :)" />
+    <MESSAGE value="add version indication, releases" />
+    <option name="LAST_COMMIT_MESSAGE" value="add version indication, releases" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

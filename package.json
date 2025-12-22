@@ -6,7 +6,7 @@
     "email": "ash@a35.dev",
     "url": "https://a35.dev/"
   },
-  "version": "5.9.4",
+  "version": "5.9.5",
   "license": "Apache-2.0",
   "private": false,
   "type": "module",
@@ -17,13 +17,12 @@
   },
 
   "scripts": {
-    "build": "bun install && nuxt build",
+    "build": "nuxt build",
+    "ci": "bun install && bun run build",
     "dev": "nuxi dev --host 0.0.0.0 --port 5173",
     "generate": "nuxt generate",
-    "preview": "npm run build && nuxt preview",
-    "postinstall": "nuxt prepare",
-    "cleanup": "rm -rf node_modules && rm -rf .output && rm -rf .nuxt",
-    "reInit": "npm run cleanup && npm i && npm run dev"
+    "preview": "bun run build && nuxt preview",
+    "postinstall": "nuxt prepare"
   },
 
   "dependencies": {

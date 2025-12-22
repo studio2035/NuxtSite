@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="switch to Bun">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="85f21143-7382-478f-90b5-9a059d90a25e" name="Changes" comment="add install to build script (CF has auto install deps disabled)">
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,26 +113,12 @@
       <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.preview">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <package-manager value="bun" />
-      <envs />
-      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
-        <browser with-js-debugger="true" />
-      </EXTENSION>
-      <method v="2" />
-    </configuration>
-    <configuration name="cleanup" type="js.build_tools.npm" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="cleanup" />
       </scripts>
       <node-interpreter value="project" />
       <package-manager value="bun" />
@@ -171,26 +156,10 @@
       </EXTENSION>
       <method v="2" />
     </configuration>
-    <configuration name="reInit" type="js.build_tools.npm" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="reInit" />
-      </scripts>
-      <node-interpreter value="project" />
-      <package-manager value="bun" />
-      <envs />
-      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
-        <browser with-js-debugger="true" />
-      </EXTENSION>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="npm.build" />
-      <item itemvalue="npm.cleanup" />
       <item itemvalue="npm.dev" />
       <item itemvalue="npm.preview" />
-      <item itemvalue="npm.reInit" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -594,15 +563,7 @@
       <workItem from="1766394076131" duration="108000" />
       <workItem from="1766398473918" duration="3000" />
       <workItem from="1766398485926" duration="6000" />
-      <workItem from="1766404494083" duration="679000" />
-    </task>
-    <task id="LOCAL-00014" summary="remove apple touch icon">
-      <option name="closed" value="true" />
-      <created>1751213623629</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1751213623629</updated>
+      <workItem from="1766404494083" duration="873000" />
     </task>
     <task id="LOCAL-00015" summary="new page backrground">
       <option name="closed" value="true" />
@@ -988,7 +949,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766404700490</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="add install to build script (CF has auto install deps disabled)">
+      <option name="closed" value="true" />
+      <created>1766405194538</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1766405194538</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1006,7 +975,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add thanks and update meta" />
     <MESSAGE value="update coloring, update CSS handling" />
     <MESSAGE value="update packages" />
     <MESSAGE value="update" />
@@ -1031,7 +999,8 @@
     <MESSAGE value="remove char card creator, make head management more efficient, fix canonical updating" />
     <MESSAGE value="update site preview image" />
     <MESSAGE value="switch to Bun" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch to Bun" />
+    <MESSAGE value="add install to build script (CF has auto install deps disabled)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add install to build script (CF has auto install deps disabled)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
